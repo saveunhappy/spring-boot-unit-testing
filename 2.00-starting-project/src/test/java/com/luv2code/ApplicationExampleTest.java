@@ -1,4 +1,4 @@
-package com.luv2code.test;
+package com.luv2code;
 
 import com.luv2code.component.MvcTestingExampleApplication;
 import com.luv2code.component.models.CollegeStudent;

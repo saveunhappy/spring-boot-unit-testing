@@ -3,6 +3,8 @@ package com.luv2code.junitdemo;
 import org.junit.jupiter.api.*;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -79,7 +81,7 @@ class DemoUtilsTest {
     @DisplayName("Iterable equals")
     @Test
     void testIterableEquals() {
-        List<String> theList = List.of("luv", "2", "code");
+        List<String> theList = new ArrayList<>(Arrays.asList("luv", "2", "code"));
 
         assertIterableEquals(theList, demoUtils.getAcademyInList(), "Expected list should be same as actual list");
     }
@@ -88,7 +90,7 @@ class DemoUtilsTest {
     @Test
     @Order(50)
     void testLinesMatch() {
-        List<String> theList = List.of("luv", "2", "code");
+        List<String> theList = new ArrayList<>(Arrays.asList("luv", "2", "code"));
 
         assertLinesMatch(theList, demoUtils.getAcademyInList(), "Lines should match");
     }

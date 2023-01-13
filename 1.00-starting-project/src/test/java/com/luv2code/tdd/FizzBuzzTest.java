@@ -15,7 +15,7 @@ class FizzBuzzTest {
     void testForDivisibleByThree() {
         String expected = "Fizz";
 
-        assertEquals(expected, FizzBuzz.compute(3), "Should return Fizz");
+        assertEquals(, FizzBuzz.compute(3), "Should return Fizz");
     }
 
     @Test
